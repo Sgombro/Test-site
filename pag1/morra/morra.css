@@ -1,0 +1,110 @@
+
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif; /* Font predefinito */
+  margin: 0; /* Rimuove il margine predefinito */
+  height: 100vh; /* Imposta l'altezza al 100% della viewport */
+  display: flex;
+  justify-content: center; /* Centra orizzontalmente */
+  align-items: center; /* Centra verticalmente */
+}
+
+#contenitore {
+  text-align: center; /* Centra il testo all'interno del contenitore */
+}
+
+/* Stile per il contenuto del gioco */
+#Form {
+  margin-bottom: 20px; /* Aggiunge spazio sotto il form */
+}
+
+/* Stile per il bottone */
+button {
+  margin-bottom: 20px; /* Aggiunge spazio sotto il bottone */
+}
+
+/* Stile per il link di download */
+a.download-link {
+  background-color: transparent; /* Viola scuro */
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+a.download-link:hover {
+  background-color: rgba(255, 255, 255, 0.092); /* Tonalità più scura di viola al passaggio del mouse */
+}
+
+
+
+DIV.staticstars {
+    background:#000 url(1UltraDeepField.jpg) repeat top center;
+    background-attachment: fixed;
+
+    position: fixed;
+    top:    0;
+    left:   0;
+    right:  0;
+    bottom: 0;
+    float: left;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: -1;
+}
+DIV.blinkingstar {
+    -webkit-animation: blinkingstar 10s infinite; animation: blinkingstar 10s infinite;
+}
+@-webkit-keyframes blinkingstar {
+    0% {opacity: 1;}
+    2% {opacity: 0.3;}
+    4% {opacity: 1;}
+}
+@keyframes blinkingstar {
+    0% {opacity: 1;}
+    2% {opacity: 0.3;}
+    4% {opacity: 1;}
+}
+nav {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 5px 0;
+}
+
+nav ul {
+  flex: 1;
+  text-align: right;
+  padding-right: 30px;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 30px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  position: absolute;
+}
+
+nav ul li a::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  transition: width 0.3s;
+}
+
+nav ul li a:hover::after {
+  width: 50%;
+}

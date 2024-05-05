@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Gioco della Morra Cinese</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="morra.js"></script>
+  <script src="blinkingstars.js"></script>
+  <link rel="stylesheet" href="morra.css">
+
+
+
+</head>
+
+<body>
+  <div class="staticstars" id="blinkingstars"></div>
+
+  <div id="contenitore">
+    <nav>
+      <ul>
+        <li><a href="..\..\home\home.html">HOME</a></li>
+      </ul>
+    </nav>
+
+    <!-- Codice del gioco -->
+
+    <h1>Gioco della Morra Cinese</h1>
+
+    <form id="Form">
+      <label><input type="radio" name="scelta" value="sasso"> Sasso</label>
+      <label><input type="radio" name="scelta" value="carta"> Carta</label>
+      <label><input type="radio" name="scelta" value="forbice"> Forbice</label>
+    </form>
+
+    <button type="button" onclick="Gioca()">Gioca</button>
+
+    <p id="vittorie">Vittorie: 0</p>
+    <p id="sconfitte">Sconfitte: 0</p>
+    <p id="pareggi">Pareggi: 0</p>
+
+    <p id="output">&nbsp;</p>
+    <p id="ris">&nbsp;</p>
+
+    <button onclick="reset()">Reset forzato</button>
+    <div><!--<button onclick="window.location.href='index.html';">Home</button>-->
+      <!--<a href="morra.html" class="download-link" download="morra.html" download="morra.js" download="morra.css">Scarica File HTML</a>-->
+      <a href="Gianella_HtmlCSSJs - fin.html" class="download-link" download="Gianella_HtmlCSSJs - fin.html">Scarica File HTML</a>
+    </div>
+  </div>
+
+</body>
+
+</html>
